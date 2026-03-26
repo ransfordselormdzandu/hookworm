@@ -1,0 +1,2 @@
+I am happy learning github actions
+this is day 2

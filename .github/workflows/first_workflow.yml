@@ -5,17 +5,16 @@ on:
 
 jobs: 
   first_job: 
-    name: my updated job
+    name: Devops first job
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Updated Welcome Message
-        run: echo "Welcome to the CI/CD world with github actions"
-
-      - name: List all Files including hidden files 
-        run: ls -a
-
-      - name: Display current working directory
-        run: pwd
+      - name: List and Read files
+        run: |
+            echo "my first github actions job"
+            ls -la
+            cat happy.txt
+            cat dockerfile
