@@ -8,8 +8,13 @@ jobs:
     name: Devops first job
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+
+      - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Execute Shell Script
-        run: ./ascii-script.sh
+      - name: List and Read files
+        run: |
+            echo "my first github actions job"
+            ls -la
+            cat happy.txt
+            
